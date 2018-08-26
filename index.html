@@ -21,10 +21,17 @@
   var randomQuote = "";
 
   function getRandomQuote() {
-  randomIndex = Math.floor(Math.random() * (quote.length - 1));
-  randomQuote = quote[randomIndex].split(";", 1);
-  document.getElementById("generateRandomQuote").innerHTML = "Citat: " + randomQuote;
-  document.getElementById("generateAnswer").innerHTML = ""
+    if (quote === undefined || quote.length == 0) {
+      alert("done")
+    }
+
+    randomIndex = Math.floor(Math.random() * (quote.length - 1));
+    randomQuote = quote[randomIndex].split(";", 1);
+    alert(randomIndex)
+
+    document.getElementById("generateRandomQuote").innerHTML = "Citat: " + randomQuote;
+    document.getElementById("generateAnswer").innerHTML = ""
+    quote.splice(randomIndex,1);
 
   }
   function getAnswer() {
