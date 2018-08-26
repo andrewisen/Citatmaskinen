@@ -19,7 +19,7 @@
             $(document).ready(function() {
                 $.ajax({
                     type: "GET",
-                    url: "data.txt",
+                    url: "./files/data.txt",
                     dataType: "text",
                     success: function(data) {processData(data);}
                     });
@@ -73,19 +73,17 @@
             </div>
         </div>
         <script>
-            var divSource = document.getElementById("div-source");
-            var divLink = document.getElementById("div-link");     
+        var divSource = document.getElementById("div-source");
+        var divLink = document.getElementById("div-link");     
 
-            var randInd = 0; // Index in Array
-            var randQuote = ""; // Temporary random quote
-            var randSource = ""; // Temprary random source (who said the quote)
-            var randLink = ""; // Temporary link to quote
+        var randInd = 0; // Index in Array
+        var randQuote = ""; // Temporary random quote
+        var randSource = ""; // Temprary random source (who said the quote)
+        var randLink = ""; // Temporary link to quote
 
         function getQuote() {
             divSource.style.display = "none";
             divLink.style.display = "none";
-
-            
 
             randInd = Math.floor(Math.random() * (quotes.length));
             randQuote = quotes[randInd][0];
