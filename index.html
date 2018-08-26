@@ -1,45 +1,84 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Citatmaskinen</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            var quotes = []
+            $(document).ready(function() {
+                $.ajax({
+                    type: "GET",
+                    url: "data.txt",
+                    dataType: "text",
+                    success: function(data) {processData(data);}
+                    });
+                });
 
-<body>
-  <div>
-    <button onclick="getRandomQuote();" type="randomQuote">Nytt citat</button>
-    <button onclick="getAnswer();" type="">Visa svar</button>
-    <!--<input "inputField" id="randomQuote">-->
-    <p id="generateRandomQuote"></p>
-    <p id="generateAnswer"></p>
-  </div>
+                function processData(allText) {
+                    var allTextLines = allText.split(/\r\n|\n/);
+                    var headers = allTextLines[0].split(';');
+                    var lines = [];
+                    
 
-<script>
-  var quote = ["Vem vare som kasta?;Skogsturken", "Ha det så kult på restaurangen!;Pistolhota unge", "De bröt min arm!;Mackes kompis", "Hon är säkrad, gamla Bettan;Trigger (Robin Hood)", "Jag avskyr frågesporter;Scar", "Anmäl mig till nästa krig;Mulans mormor","Stockholmare är smartare än lantisar;Anna Kinberg Batra","10000 tyska bögar;Hassan","40 000 miljarder kronor;Margareta Sandstedts","Halloj! Det här är en fågel;Fågelturken","100% Köra bil;Körkortsturken","Jag ska klippa hans tung;Laserturken","Jag ska göra kaoz med han;Laserturken","Men jag vill knarka!;Elin (Fucking Åmål)","Jag var ju liten jag förstod inte!;Gandalf (Sagan om de Bannlysta)","Vad heter melon på engelska?;Frodo (Sagan om de Bannlysta)","Skrik inte!;Gandalf (Sagan om de Bannlysta)","Du är för dålig för att kasta sten;Aragon (Sagan om de Bannlysta)","Backa RÅÅ;Backarå-braten","Jag kommer att komma tillbaka, det kan ni ge er fan på;Idol Anna","No, no, no! No, we call them...Wienerbröd;Rudolf (Sunes Sommar)","Gracias Séniorita;Jerry (talar spanska)","Fan va arg!!!!!!;Cykelturken","Du luktar bajs;Päron (En bajskorv)","Det är ORIMLIGT!;Kishti (Idol 2004)","Kom igen nu Britt-Marie! Kör för fan!;Patrik Nilsso (Kom igen nu Britt-Marie-killen)","Här kan man vara, här kan man vara...;WoW-Jocke (Björn Gustavsson)","Ett svärd kan aldrig ha en level, det kan required level men aldrig level;WoW-Jocke (Björn Gustavsson)","SUG MIN RÖV!;Mackes kompis"];
+                    for (var i=0; i<allTextLines.length; i++) {
+                        var data = allTextLines[i].split(';');
+                        if (data.length == headers.length) {
 
-  var randomIndex = 0;
-  var randomQuote = "";
+                            var tarr = [];
+                            for (var j=0; j<headers.length; j++) {
+                                //tarr.push(headers[j]+":"+data[j]);
+                                tarr.push(data[j]);
+                            }
+                            lines.push(tarr);
+                    }
+                }
+                quotes = lines;
+                //alert(quotes);
+            }
+        </script>
+        <title>Citatmaskinen 2.0</title>
+    </head>
+    <body>
+        <div id="div-btn">
+            <button onclick="getQuote();">Nytt citat</button>
+            <button onclick="getSource();">Visa svar</button>
+        </div>
+        <div id="div-quote"><p id="tempQuote">Citat: </p></div>
+        <div id="div-source"><p id="tempSource">Svar: </p></div>
+        <div id="div-link"><p><a id="tempLink" href="#" target="_blank">Länk till Citat</a></p></div>
+        <script>
+            var divSource = document.getElementById("div-source");
+            var divLink = document.getElementById("div-link");     
 
-  function getRandomQuote() {
-    if (quote === undefined || quote.length == 0) {
-      alert("done")
-    }
+            var randInd = 0; // Index in Array
+            var randQuote = ""; // Temporary random quote
+            var randSource = ""; // Temprary random source (who said the quote)
+            var randLink = ""; // Temporary link to quote
 
-    randomIndex = Math.floor(Math.random() * (quote.length - 1));
-    randomQuote = quote[randomIndex].split(";", 1);
-    alert(randomIndex)
+        function getQuote() {
+            divSource.style.display = "none";
+            divLink.style.display = "none";
 
-    document.getElementById("generateRandomQuote").innerHTML = "Citat: " + randomQuote;
-    document.getElementById("generateAnswer").innerHTML = ""
-    quote.splice(randomIndex,1);
+            
 
-  }
-  function getAnswer() {
-  var quoteAnswer = quote[randomIndex].split(";", 2)[1];
-  document.getElementById("generateAnswer").innerHTML = "Svar: " + quoteAnswer;
-  }
-</script>
+            randInd = Math.floor(Math.random() * (quotes.length));
+            randQuote = quotes[randInd][0];
+            randSource = quotes[randInd][1];
+            randLink = quotes[randInd][2];
 
-</body>
+            document.getElementById("tempQuote").innerHTML = "Citat: " + randQuote;
+            document.getElementById("tempSource").innerHTML = "Svar: ";
+            document.getElementById("tempLink").href = "#";
+            
+            }
+        function getSource() {
+            divSource.style.display = "block";
+            divLink.style.display = "block";
+            document.getElementById("tempSource").innerHTML = "Svar: " + randSource;
+            document.getElementById("tempLink").href = randLink;
+        }
+        </script>
+
+    </body>
 </html>
 
