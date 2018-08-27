@@ -92,15 +92,15 @@
             randSource = quotes[randInd][1];
             randLink = quotes[randInd][2];
 
-            document.getElementById("tempQuote").innerHTML = "Citat: " + randQuote;
-            document.getElementById("tempSource").innerHTML = "Svar: ";
+            document.getElementById("tempQuote").innerHTML = "<b>Citat: </b>" + randQuote;
+            document.getElementById("tempSource").innerHTML = "<b>Svar: </b>";
             document.getElementById("tempLink").href = "#";
             
             }
         function getSource() {
             divSource.style.display = "block";
             divLink.style.display = "block";
-            document.getElementById("tempSource").innerHTML = "Svar: " + randSource;
+            document.getElementById("tempSource").innerHTML = "<b>Svar: </b>" + randSource;
             document.getElementById("tempLink").href = randLink;
         }
         </script>
