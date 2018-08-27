@@ -87,15 +87,20 @@
             divSource.style.display = "none";
             divLink.style.display = "none";
 
-            randInd = Math.floor(Math.random() * (quotes.length));
-            randQuote = quotes[randInd][0];
-            randSource = quotes[randInd][1];
-            randLink = quotes[randInd][2];
+            if (quotes === undefined || quotes.length == 0) {
+                alert("Inga fler citat. Be någon fylla på!");
+            } else {
+                randInd = Math.floor(Math.random() * (quotes.length));
+                randQuote = quotes[randInd][0];
+                randSource = quotes[randInd][1];
+                randLink = quotes[randInd][2];
 
-            document.getElementById("tempQuote").innerHTML = "<b>Citat: </b>" + randQuote;
-            document.getElementById("tempSource").innerHTML = "<b>Svar: </b>";
-            document.getElementById("tempLink").href = "#";
-            
+                document.getElementById("tempQuote").innerHTML = "<b>Citat: </b>" + randQuote;
+                document.getElementById("tempSource").innerHTML = "<b>Svar: </b>";
+                document.getElementById("tempLink").href = "#";
+            }
+            quotes.splice(randInd, 1);
+
             }
         function getSource() {
             divSource.style.display = "block";
