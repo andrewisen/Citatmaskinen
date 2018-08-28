@@ -36,7 +36,7 @@ Förslagsvis i data-filen.
 Den är uppbyggd som en CSV-fil enligt följande:
 
 ```
-* CITAT * ; * KÄLLA * ; * LÄNK TILL CITAT *
+** CITAT ** ; ** KÄLLA ** ; ** LÄNK TILL CITAT **
 Vem vare som kasta?;Skogsturken;https://youtu.be/bzUiA9tjn6E?t=30s
 Ha det så kult på restaurangen!;Pistolhota unge;https://youtu.be/qCSfy670df4?t=27s
 ```
