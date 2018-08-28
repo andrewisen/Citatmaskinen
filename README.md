@@ -27,11 +27,18 @@ git clone https://github.com/andrewisen/citatmaskinen.git
 ```
 
 Gör dina egna redigeringar i valfritt program.
-Förslagsvis i data-filen. Den är uppbyggd som en CSV-fil.
-Öppna så ser du hur den funkar :)
+Förslagsvis i data-filen.
 
 ```
 "./files/data.txt".
+```
+
+Den är uppbyggd som en CSV-fil enligt följande:
+
+```
+* CITAT * ; * KÄLLA * ; * LÄNK TILL CITAT *
+Vem vare som kasta?;Skogsturken;https://youtu.be/bzUiA9tjn6E?t=30s
+Ha det så kult på restaurangen!;Pistolhota unge;https://youtu.be/qCSfy670df4?t=27s
 ```
 
 Ladda upp till ditt webbhotell med FTP-klient.
