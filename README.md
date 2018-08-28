@@ -27,6 +27,13 @@ git clone https://github.com/andrewisen/citatmaskinen.git
 ```
 
 Gör dina egna redigeringar i valfritt program.
+Förslagsvis i data-filen. Den är uppbyggd som en CSV-fil.
+Öppna så ser du hur den funkar :)
+
+```
+"./files/data.txt".
+```
+
 Ladda upp till ditt webbhotell med FTP-klient.
 
 ## Built With
