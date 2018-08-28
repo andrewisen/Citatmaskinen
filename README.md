@@ -1,4 +1,4 @@
-# citatmaskinen
+# Citatmaskinen 2.0
 
 En dryckeslek för oss 90-talister som hängt på internet ett tag...
 
