@@ -4,16 +4,18 @@
         <meta charset="UTF-8">
         <meta name="description" content="Citatmaskinen">
         <meta name="author" content="André 'MG' Wisén">
-        <!--<link rel="icon" href="../../favicon.ico">-->
         <title>Citatmaskinen 2.0</title>
 
-        <!-- Bootstrap core CSS -->
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
+
+        <!-- Bootstrap -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
         <link href="./css/custom.css" rel="stylesheet">
 
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             var quotes = []
             $(document).ready(function() {
@@ -50,30 +52,84 @@
         <title>Citatmaskinen 2.0</title>
     </head>
     <body>
-        <!--
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <a class="navbar-brand" href="#">
-            Citatmaskinen 2.0
-            </a>
-        </nav>
-        -->
+        <div class="container">
+                <h1>Citatmaskinen 2.0</h1>
+                <p class="lead">
+                    Spelet går ut på att slumpa fram citat från filmer, TV och delar av internet. <a href="#" data-toggle="collapse" data-target="#readMore">Läs mer</a> 
+                </p>
 
-        <div class="container-fluid">
-            <div class="starter-template">
-                <h1>Citatmaskinen 2.0 - Spelregel</h1>
-                <p class="lead">Slumpa fram ett citat.<br>Kan du <b>inte</b> ange källan till citatet? Ta en klunk!<br><br>Använd gärna era egna regler. Mycket nöje! // MG</p>
+                    <div id="readMore" class="collapse">
+                        <p class="lead">
+                        Citatmaskinen 2.0 är ett dryckesspel som jag utvecklade för få mig att känna mig sentimental.<br>
+                        Är du född på 90-talet så minns du säkert tiden då internet dök upp i var och varrannans hem.<br><br>
+                        Du kanske själv minns någon viral internetvideo från tidigt 2000-tal?<br><br>
+
+                        <b>Då är detta spel perfekt för dig!</b><br>
+                        Nedan följer lite förslag till spelregler, men du och dina kompisar får såklart spela detta hur ni vill.<br><br>
+                        Mycket nöje! // MG
+                        <br><a href="#" data-toggle="collapse" data-target="#readMore">Läs mindre</a> 
+                        </p>
+                    </div>
+
+                <h2>Hur full vill du bli?</h2>
+                <br>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active justify-content-center" data-toggle="tab" href="#easy">Lite full</a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#medium">Lagom full</a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#hard">Jättefull</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="easy" class="container tab-pane active"><br>
+                        <p class="lead">
+                            Slumpa fram ett citat.<br><br>
+                            Kan du <b><u>inte</u></b> ange källan till citatet - ta en (1) klunk!
+                        </p>
+                    </div>
+                    <div id="medium" class="container tab-pane fade"><br>
+                        <p class="lead">
+                            Slumpa fram ett citat.<br><br>
+                            Om det är din tur och du <b><u>inte</u></b> kan ange källan till citatet - ta tre (3) klunkar!<br>
+                            Om någon annan i gruppen <b><u>inte</u></b> kan ange källan till citatet - ta en (1) klunk!
+                        </p>
+                    </div>
+                    <div id="hard" class="container tab-pane fade"><br>
+                        <p class="lead">
+                            Slumpa fram ett citat.<br><br>
+                            Om det är din tur och du <b><u>inte</u></b>kan ange källan till citatet - ta tre (3) klunkar!<br>
+                            Om någon annan i gruppen <b><u>inte</u></b> kan ange källan till citatet - ta två (2) klunkar!<br>
+                            Ta en (1) klunk vid varje nytt citat.
+                        </p>
+                    </div>
+                </div>
+                
+                <br>
+                <h2>Börja spela!</h2>
+                <br>
+
                 <div id="div-btn">
                     <button type="button" class="btn btn-lg btn-primary" onclick="getQuote();">Nytt citat</button>
                     <button type="button" class="btn btn-lg btn-primary" onclick="getSource();">Visa svar</button>
+                    <a class="btn btn-lg btn-warning" href="." role="button">Ladda om sidan</a>
                 </div>
-            </div>
-            <div class="starter-template">
+
                 <br>
                 <div id="div-quote"><p class="lead" id="tempQuote"><b>Citat: </b></p></div>
                 <div id="div-source"><p class="lead" id="tempSource"><b>Svar: </b></p></div>
                 <div id="div-link"><p><a class="lead" id="tempLink" href="#" target="_blank"><b>Länk till Citat</b></a></p></div>
-            </div>
-        </div>
+         </div>
+
+
+
         <script>
         var divSource = document.getElementById("div-source");
         var divLink = document.getElementById("div-link");     
@@ -109,6 +165,7 @@
             document.getElementById("tempLink").href = randLink;
         }
         </script>
+
 
     </body>
 </html>
