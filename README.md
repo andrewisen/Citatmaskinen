@@ -6,7 +6,7 @@ En dryckeslek för oss 90-talister som hängt på internet ett tag...
 
 Bara att klona och köra i valfri webbläsare.
 
-OBS: Sökvägen till textfilen är "./files/data.txt".
+OBS: Sökvägen till textfilen är "./files/data.txt".<br>
 Det kan uppstå problem om du kör direkt i OSX eller Linux.
 
 
