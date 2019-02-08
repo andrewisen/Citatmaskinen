@@ -1,14 +1,18 @@
 # Citatmaskinen 2.0
 Citatmaskinen är en en dryckeslek för oss som hängt på internet och gillar fuktiga mejmejs.<br/>
 Det är en hemsida med slumpmässiga citat från populära internetvideos.<br/><br/>
-Hemsidan går ut på att gissa ursprunget till citaten - kul va!
-## Komma igång
-Bara att klona och köra i valfri webbläsare.
+Hemsidan går ut på att gissa ursprunget till citaten - Kul va!
 
-OBS: Sökvägen till textfilen är "./files/data.txt".<br>
+## Komma igång
+Det är bara att klona och köra i valfri webbläsare.<br/>
+Du kan även göra enkla ändringar för att göra sidan till din egen.<br/>
+
+OBS: Sökvägen till textfilen är "./files/data.txt".<br/>
 Det kan uppstå problem om du kör direkt i OSX eller Linux.
 
 ### Frutsättningar
+Grundläggande webkunksaper rekomenderas.
+
 ```
 Ett webbhotell att ladda upp innehållet till.
 ```
@@ -22,14 +26,14 @@ Börja med att klona projektet.
 git clone https://github.com/andrewisen/citatmaskinen.git
 ```
 
-Gör dina egna redigeringar i valfritt program.
+Gör dina egna redigeringar i valfritt program.<br/>
 Förslagsvis i data-filen.
 
 ```
 "./files/data.txt".
 ```
 
-Den är uppbyggd som en CSV-fil enligt följande:
+Den är uppbyggd som en CSV-fil enligt följande konvektion:
 
 ```
 CITAT ;  KÄLLA ; LÄNK TILL CITAT 
@@ -43,7 +47,7 @@ Ha det så kult på restaurangen!;Pistolhota unge;https://youtu.be/qCSfy670df4?t
 ...
 ```
 
-Ladda upp till ditt webbhotell med FTP-klient.
+Ladda sedan innehållet till ditt webbhotell med valfri FTP-klient.
 
 ## Skapad med
 
