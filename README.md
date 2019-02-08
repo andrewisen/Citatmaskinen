@@ -20,7 +20,7 @@ Ett webbhotell att ladda upp innehållet till.
 ### Installera
 
 Börja med att klona projektet.
-Är du osäker? [Läs hur man klonar projekt här!}(https://help.github.com/articles/cloning-a-repository/)
+Är du osäker? [Läs hur man klonar projekt här!](https://help.github.com/articles/cloning-a-repository/)
 
 ```console
 git clone https://github.com/andrewisen/citatmaskinen.git
