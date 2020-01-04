@@ -10,7 +10,7 @@ Det är bara att klona och ladda upp på ett webhotell :)
 
 ## Demo
 Live-demo finns på:<br/>
-[http://github.andrewisen.se/citatmaskinen/](http://github.andrewisen.se/citatmaskinen/)
+[https://github.andrewisen.se/citatmaskinen/](https://github.andrewisen.se/citatmaskinen/)
 
 ## Skrämdump
 ![Alt text](/screenshots/screenshot-01.jpg?raw=true "Skärmdump")
