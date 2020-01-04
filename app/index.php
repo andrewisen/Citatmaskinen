@@ -125,9 +125,9 @@
             <button class="btn btn-lg btn-outline-primary btn-block" onclick="getSource();" type="submit">Svar</button>
         
             <p class="mt-3 mb-3">
-                <code data-toggle="modal" data-target="#modal-info">Info</code>
+                <code data-toggle="modal" data-target="#modal-info"><a href="#modal-info">Info</a></code>
                 <br>
-                <code data-toggle="modal" data-target="#modal-rules">Dryckesregler</code>
+                <code data-toggle="modal" data-target="#modal-rules"><a href="#modal-rules">Dryckesregler</a></code>
                 <br>
                 <code><a href="https://github.com/andrewisen/citatmaskinen#bidra" target="_blank">Bidra med citat</a></code>
                 <br>
