@@ -6,7 +6,7 @@
     $appAuthor = "André 'MG' Wisén";
 
     $info = $appName . ' är ett (dryckes)spel som jag utvecklade då jag kände mig sentimental.<br><br>
-    Är du född på 90-talet så minns du säkert tiden då internet dök upp i var och varrannans hem.<br><br>
+    Är du född i början av 90-talet så minns du säkert tiden då internet dök upp i var och varrannans hem.<br><br>
     Du kanske själv minns någon viral internetvideo från tidigt 2000-tal?<br><br>
     <b>Slumpa fram ett citat och se om du vet vart citatet kommer ifrån!</b>
     ';
@@ -128,6 +128,10 @@
                 <code data-toggle="modal" data-target="#modal-info">Info</code>
                 <br>
                 <code data-toggle="modal" data-target="#modal-rules">Dryckesregler</code>
+                <br>
+                <code><a href="https://github.com/andrewisen/citatmaskinen#bidra" target="_blank">Bidra med citat</a></code>
+                <br>
+                <code><a href="https://vadfanskajagdricka.se" target="_blank">vadfanskajagdricka.se</a></code>
             </p>
 
             <p class="mt-5 mb-3 text-muted">
@@ -163,7 +167,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Hur full vill du bli?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Spelregler</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
