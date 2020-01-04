@@ -129,7 +129,7 @@
                 <br>
                 <code data-toggle="modal" data-target="#modal-rules"><a href="#modal-rules">Dryckesregler</a></code>
                 <br>
-                <code><a href="https://github.com/andrewisen/citatmaskinen#bidra" target="_blank">Bidra med citat</a></code>
+                <code><a href="https://forms.gle/8JeM1H9GHnLDq41t5" target="_blank">Bidra med citat</a></code>
                 <br>
                 <code><a href="https://vadfanskajagdricka.se" target="_blank">vadfanskajagdricka.se</a></code>
             </p>
