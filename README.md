@@ -90,7 +90,13 @@ Detta ger således:
 * [Bootstrap](https://getbootstrap.com) - Design
 
 ## Bidra
-Det går att bidra genom att "pulla", men det går även utmärkt att mejla:
+Det går att bidra genom att "pulla" i repot.<br/><br/>
+
+Du kan även använda denna länk:<br/>
+[https://forms.gle/8JeM1H9GHnLDq41t5](https://forms.gle/8JeM1H9GHnLDq41t5)
+<br/>
+<br/>
+Dessutom går det utmärkt att mejla:
 <br/>
 [citatmaskinen "at" andrewisen.se](mailto:citatmaskinen@andrewisen.se)
 
