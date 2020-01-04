@@ -111,4 +111,4 @@ Mejla:
 
 ## Licens
 
-[https://github.com/andrewisen/citatmaskinen/blob/master/LICENSE](https://github.com/andrewisen/citatmaskinen/blob/master/LICENSE)
+[GNU General Public License v3.0](https://github.com/andrewisen/citatmaskinen/blob/master/LICENSE)
