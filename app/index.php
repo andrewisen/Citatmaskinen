@@ -5,11 +5,37 @@
     $appTitle = $appName . " " . $appVersion;
     $appAuthor = "André 'MG' Wisén";
 
-    $info = $appName . ' är ett (dryckes)spel som jag utvecklade då jag kände mig sentimental.<br><br>
+    $splashScreen = $appName . ' är ett dryckesspel som jag skapade då jag började känna mig sentimental.<br><br>
     Är du född i början av 90-talet så minns du säkert tiden då internet dök upp i var och varrannans hem.<br><br>
     Du kanske själv minns någon viral internetvideo från tidigt 2000-tal?<br><br>
+    
+    Spelet är perfekt för dig som är fast på en tråkig förfest eller för dig som vill bli full med dina riktiga vänner.<br><br>
+
     <b>Slumpa fram ett citat och se om du vet vart citatet kommer ifrån!</b>
+
     ';
+
+    $info = $appName . ' innehåller citat från "kända" personer, YouTube-klipp, filmer, TV-serier och mycket annat.<br><br>
+    Spelet är främst till för dig som är född under tidigt 90-tal och har hängt på internet (främst YouTube) en del.<br>
+    Notera att även nyare citat kan förekomma.<br><br>
+
+    Varje citat slumpas fram.<br>
+    Din uppgift är att försöka ange källan till citatet.<br>
+    Tryck <code data-toggle="modal" data-target="#modal-rules"><a href="#modal-rules">här</a></code> för att läsa dryckesreglerna.<br><br>
+    Har du några frågor? Eller har du hittat något fel?<br>
+    Det går utmärkt att kontakta mig via:<br><br>
+    <div class="alert alert-secondary" role="alert">
+        <a href="mailto:citatmaskinen@andrewisen.se">citatmaskinen [at] andrewisen.se</a>
+    </div>
+    
+    <b>Mycket nöje!</b><br><br>
+
+    <code><a href="https://forms.gle/8JeM1H9GHnLDq41t5" target="_blank">Bidra med citat</a></code>
+    <br>
+    <code><a href="https://vadfanskajagdricka.se" target="_blank">vadfanskajagdricka.se</a></code><br><br>
+
+    Skapad med <span style="color: #e25555;">&#9829;</span> in Stockholm.
+<br>    ';
 
     $rules = '
             <p>
@@ -111,12 +137,12 @@
     <!-- Main content -->
     <body class="text-center">
         <div class="quote">
-            <img class="mb-4" src="./logos/logo_300x300.png" alt="" width="72" height="72">
+            <a href="?easterEgg"><img class="mb-4" src="./logos/logo_300x300.png" alt="" width="72" height="72"></a>
             <div class="alert alert-primary" role="alert">
                 <h4 class="alert-heading"></h4>
                 <h2><b><p id="id-quote"><?php echo $appTitle;?></p></b></h2>
                 <p id="id-source">
-                    <?php echo $info;?>
+                    <?php echo $splashScreen;?>
                 </p>
             </div>
 
@@ -128,10 +154,6 @@
                 <code data-toggle="modal" data-target="#modal-info"><a href="#modal-info">Info</a></code>
                 <br>
                 <code data-toggle="modal" data-target="#modal-rules"><a href="#modal-rules">Dryckesregler</a></code>
-                <br>
-                <code><a href="https://forms.gle/8JeM1H9GHnLDq41t5" target="_blank">Bidra med citat</a></code>
-                <br>
-                <code><a href="https://vadfanskajagdricka.se" target="_blank">vadfanskajagdricka.se</a></code>
             </p>
 
             <p class="mt-5 mb-3 text-muted">
@@ -275,5 +297,13 @@
         var quote = "";
         var source = "";
         var url = "";
+
+        var status =  window.location.search.substr(1);
+        if (status == "easterEgg") {
+            document.getElementById("id-quote").innerHTML = "Du tryckte på loggan!";
+            document.getElementById("id-source").innerHTML = "Du är en nyfiken typ :)";
+        }
+
+
     </script>
 </html>
