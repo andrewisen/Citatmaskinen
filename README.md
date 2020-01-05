@@ -1,12 +1,13 @@
 # Citatmaskinen 3.0
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
-Citatmaskinen är en dryckeslek för oss som hängt på internet och gillar fuktiga mejmejs.<br/>
-Det är en hemsida med slumpmässiga citat från populära internetvideos och filmer.<br/><br/>
-Hemsidan går ut på att gissa ursprunget till citaten.
+Citatmaskinen är ett dryckeslek för dig som är född i början av 90-talet.<br/>
+Hemsida genererar slumpmässiga citat från populära internetvideos, filmer, TV-serier och mycket annat.<br/><br/>
+Din uppgift är att ta reda på källan till citatet!
 
 ## Komma igång
-Det är bara att klona och ladda upp på ett webhotell :)
+Det är bara att klona projektet och ladda upp på ditt egna webhotell :)
+Alternativt kan du använda min version (som finns länkad nedanför).
 
 ## Demo
 Live-demo finns på:<br/>
@@ -22,7 +23,7 @@ Grundläggande förståelser inom HTML, CSS, Javascript och PHP rekommenderas.<b
 Så, för att köra sidan behöver du:
 
 ```
-Ett webbhotell att ladda upp innehållet till.
+Ett webbhotell att ladda upp innehållet till
 ```
 
 T.ex. [Loopia](https://www.loopia.se), [Binero](https://www.binero.se) eller [One.com](https://www.one.com/sv/).
@@ -50,7 +51,6 @@ php -S localhost:9000 -t app/
 
 Jag har en `makefile` som gör livet lite enklare.
 (Du får själv Googla på vad en sk. makefile är för nåt).
-
 
 ## Redigera
 Gör dina egna redigeringar i ett valfritt text-redigeringsprogram.<br/><br/>
@@ -90,16 +90,17 @@ Detta ger således:
 * [Bootstrap](https://getbootstrap.com) - Design
 
 ## Bidra
-Det går att bidra genom att "pulla" i repot.<br/><br/>
-
-Du kan även använda denna länk:<br/>
+Du kan bidra med nya citat genom att använda denna länk:<br/>
 [https://forms.gle/8JeM1H9GHnLDq41t5](https://forms.gle/8JeM1H9GHnLDq41t5)
 <br/>
 <br/>
 Dessutom går det utmärkt att mejla:
 <br/>
+<br/>
 [citatmaskinen "at" andrewisen.se](mailto:citatmaskinen@andrewisen.se)
-
+<br/>
+<br/>
+Såklart går det att bidra genom att "pulla" i repot :)<br/><br/>
 ## Kontakt
 Mejla:
 <br/>
