@@ -1,7 +1,7 @@
 # Citatmaskinen 3.0
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
-Citatmaskinen är ett dryckeslek för dig som är född i början av 90-talet.<br/>
+Citatmaskinen är ett dryckesspel för dig som är född i början av 90-talet.<br/>
 Hemsida genererar slumpmässiga citat från populära internetvideos, filmer, TV-serier och mycket annat.<br/><br/>
 Din uppgift är att ta reda på källan till citatet!
 
