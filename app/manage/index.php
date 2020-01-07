@@ -59,7 +59,13 @@
                             var embedURL = data[j];
                             embedURL = embedURL.split("/");
                             embedURL = embedURL[embedURL.length - 1];
-                            quoteString += '<td><iframe src="https://www.youtube.com/embed/' + embedURL + '"> </iframe></td>';
+
+                            if (embedURL.includes("watch?v") == true){
+                                embedURL = embedURL.replace("watch?v=","");
+                                quoteString += '<td><iframe src="https://www.youtube.com/embed/' + embedURL + '"> </iframe></td>';
+                            } else {
+                                quoteString += '<td><iframe src="https://www.youtube.com/embed/' + embedURL + '"> </iframe></td>';
+                            }
                         } else {
                         	quoteString += "<td>" + data[j] + "</td>";
                         }
