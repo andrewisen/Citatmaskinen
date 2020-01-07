@@ -56,6 +56,10 @@
                         //etarr.push(data[j]);
                         if (j==2){
                         	quoteString += '<td><a href="' + data[j] + '" target="_blank">' + data[j] + '</a></td>';
+                            var embedURL = data[j];
+                            embedURL = embedURL.split("/");
+                            embedURL = embedURL[embedURL.length - 1];
+                            quoteString += '<td><iframe src="https://www.youtube.com/embed/' + embedURL + '"> </iframe></td>';
                         } else {
                         	quoteString += "<td>" + data[j] + "</td>";
                         }
@@ -68,6 +72,6 @@
             document.getElementById("quotes-id").innerHTML = quoteString;
         }
     }
-    var quoteString = "<table><tr><th>ID</th><th>Citat</th><th>Källa</th><th>Länk till citat</th></tr>";
+    var quoteString = "<table><tr><th>ID</th><th>Citat</th><th>Källa</th><th>Länk till citat</th><th>Inbäddad</th></tr>";
     loadQuotes();
 </script>
