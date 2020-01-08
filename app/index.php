@@ -5,17 +5,16 @@
     $appTitle = $appName . " " . $appVersion;
     $appAuthor = "André 'MG' Wisén";
 
-    $splashScreen = $appName . ' är ett dryckesspel som jag skapade då jag började känna mig sentimental.<br><br>
-    Är du född i början av 90-talet så minns du säkert tiden då internet dök upp i var och varrannans hem.<br><br>
+    $splashScreen = 'Är du född i början av 90-talet så minns du säkert tiden då internet dök upp i var och varrannans hem.<br><br>
     Du kanske själv minns någon viral internetvideo från tidigt 2000-tal?<br><br>
     
-    Spelet är perfekt för dig som är fast på en tråkig förfest eller för dig som vill bli full med dina riktiga vänner.<br><br>
+    ' . $appName . ' är perfekt för dig som är fast på en tråkig förfest eller för dig som vill bli jävligt full med dina riktiga vänner.<br><br>
 
     <b>Slumpa fram ett citat och se om du vet vart citatet kommer ifrån!</b>
 
     ';
 
-    $info = $appName . ' innehåller citat från "kända" personer, YouTube-klipp, filmer, TV-serier och mycket annat.<br><br>
+    $info = $appName . ' innehåller svenska citat från "kända" personer, YouTube-klipp, filmer, TV-serier och mycket annat.<br><br>
     Spelet är främst till för dig som är född under tidigt 90-tal och har hängt på internet (främst YouTube) en del.<br>
     Notera att även nyare citat kan förekomma.<br><br>
 
