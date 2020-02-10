@@ -84,7 +84,7 @@
                         <p>
                             Alla personer gissar källan till citatet.<br><br>
 
-                            <b>Nu gäller det att skrika högtst och först!</b><br>    
+                            <b>Nu gäller det att skrika högst och först!</b><br>    
                             Om den som gissade hade rätt så tar alla andra <b>en (1)</b> klunk var!<br><br>
                             Men, om den som gissade hade fel så tar den <b>tre (3)</b> klunkar!
                             <br><br>
