@@ -4,4 +4,6 @@ dev:
 	open http://localhost:$(port)
 	php -S localhost:$(port) -t app/
 
+check-links:
+	./check-links.sh
 	
